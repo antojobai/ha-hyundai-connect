@@ -29,7 +29,7 @@ class HyundaikiaEntity(CoordinatorEntity):
         self._key = key
         self._attr_unique_id = f"{unique_prefix}_{key}"
         self._attr_device_info = {
-            "identifiers": {("hyundai_kia_connect", unique_prefix)},
+            "identifiers": {("hyundai-connect", unique_prefix)},
             "name": vehicle.name,
             "manufacturer": "Hyundai",
             "model": vehicle.model,

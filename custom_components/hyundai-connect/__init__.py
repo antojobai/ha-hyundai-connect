@@ -54,7 +54,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     return True
 
 
-UNREGISTER_LISTENER = "hyundai_kia_connect_unregister_listener"
+UNREGISTER_LISTENER = "hyundai-connect_unregister_listener"
 
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:

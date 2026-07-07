@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from homeassistant.const import Platform
 
-DOMAIN = "hyundai_kia_connect"
+DOMAIN = "hyundai-connect"
 
 CONF_BRAND = "brand"
 CONF_PIN = "pin"

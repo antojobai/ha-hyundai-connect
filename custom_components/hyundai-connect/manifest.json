@@ -1,6 +1,6 @@
 {
-  "domain": "hyundai_kia_connect",
-  "name": "Hyundai / Kia Connect",
+  "domain": "hyundai-connect",
+  "name": "Hyundai Connect",
   "codeowners": ["Hyundai-Kia-Connect"],
   "config_flow": true,
   "dependencies": [],

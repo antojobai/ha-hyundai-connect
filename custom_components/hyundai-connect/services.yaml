@@ -7,7 +7,7 @@ lock:
   target:
     entity:
       domain: lock
-      integration: hyundai_kia_connect
+      integration: hyundai-connect
 
 unlock:
   description: Unlock the vehicle.
@@ -18,7 +18,7 @@ unlock:
   target:
     entity:
       domain: lock
-      integration: hyundai_kia_connect
+      integration: hyundai-connect
 
 start_climate:
   description: Start remote climate control.
@@ -41,18 +41,18 @@ start_climate:
   target:
     entity:
       domain: climate
-      integration: hyundai_kia_connect
+      integration: hyundai-connect
 
 stop_climate:
   description: Stop remote climate control.
   target:
     entity:
       domain: climate
-      integration: hyundai_kia_connect
+      integration: hyundai-connect
 
 locate:
   description: Locate the vehicle.
   target:
     entity:
       domain: device_tracker
-      integration: hyundai_kia_connect
+      integration: hyundai-connect
