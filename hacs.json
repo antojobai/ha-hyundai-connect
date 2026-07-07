@@ -1,0 +1,10 @@
+{
+  "name": "Hyundai / Kia Connect",
+  "filename": "hyundai_kia_connect",
+  "version": "1.0.0",
+  "country": ["IN", "US", "EU", "AU"],
+  "homeassistant": "2025.1.0+",
+  "render_readme": true,
+  "requirements": ["hyundai_kia_connect_api>=4.0.0"],
+  "codeowners": ["@anto"]
+}

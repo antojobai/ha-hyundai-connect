@@ -1,0 +1,58 @@
+lock:
+  description: Lock the vehicle.
+  fields:
+    vin:
+      description: Vehicle VIN. Defaults to first vehicle when omitted.
+      example: "KNxxxx..."
+  target:
+    entity:
+      domain: lock
+      integration: hyundai_kia_connect
+
+unlock:
+  description: Unlock the vehicle.
+  fields:
+    vin:
+      description: Vehicle VIN. Defaults to first vehicle when omitted.
+      example: "KNxxxx..."
+  target:
+    entity:
+      domain: lock
+      integration: hyundai_kia_connect
+
+start_climate:
+  description: Start remote climate control.
+  fields:
+    temperature:
+      description: Target cabin temperature in Celsius.
+      example: 21
+    duration:
+      description: Duration in minutes.
+      example: 5
+    defrost:
+      description: Enable defrost.
+      example: false
+    climate:
+      description: Enable HVAC climate mode.
+      example: true
+    heating:
+      description: Additional heating level.
+      example: 0
+  target:
+    entity:
+      domain: climate
+      integration: hyundai_kia_connect
+
+stop_climate:
+  description: Stop remote climate control.
+  target:
+    entity:
+      domain: climate
+      integration: hyundai_kia_connect
+
+locate:
+  description: Locate the vehicle.
+  target:
+    entity:
+      domain: device_tracker
+      integration: hyundai_kia_connect
