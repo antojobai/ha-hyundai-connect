@@ -99,6 +99,16 @@ BINARY_SENSOR_TYPES: tuple[BinarySensorEntityDescription, ...] = (
         device_class=BinarySensorDeviceClass.POWER,
     ),
     BinarySensorEntityDescription(
+        key="side_mirror_heater_is_on",
+        translation_key="side_mirror_heater_is_on",
+        device_class=BinarySensorDeviceClass.POWER,
+    ),
+    BinarySensorEntityDescription(
+        key="sunroof_is_open",
+        translation_key="sunroof_is_open",
+        device_class=BinarySensorDeviceClass.WINDOW,
+    ),
+    BinarySensorEntityDescription(
         key="ign3",
         translation_key="ign3",
         device_class=BinarySensorDeviceClass.POWER,

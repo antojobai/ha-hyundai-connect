@@ -56,3 +56,85 @@ locate:
     entity:
       domain: device_tracker
       integration: hyundai-connect
+
+open_sunroof:
+  description: Open the sunroof.
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+close_sunroof:
+  description: Close the sunroof.
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+open_windows:
+  description: Open windows by position.
+  fields:
+    front_left:
+      description: Front left window.
+      example: true
+    front_right:
+      description: Front right window.
+      example: true
+    back_left:
+      description: Back left window.
+      example: true
+    back_right:
+      description: Back right window.
+      example: true
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+close_windows:
+  description: Close windows by position.
+  fields:
+    front_left:
+      description: Front left window.
+      example: true
+    front_right:
+      description: Front right window.
+      example: true
+    back_left:
+      description: Back left window.
+      example: true
+    back_right:
+      description: Back right window.
+      example: true
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+start_hazard_lights:
+  description: Start hazard lights.
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+start_hazard_lights_and_horn:
+  description: Start hazard lights and horn.
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+start_valet_mode:
+  description: Start valet mode.
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
+
+stop_valet_mode:
+  description: Stop valet mode.
+  target:
+    entity:
+      domain: binary_sensor
+      integration: hyundai-connect
